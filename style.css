@@ -1,0 +1,231 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+      
+        color: white;
+    background-color: black;
+}
+
+  /* navigation section  */
+.navigation{
+
+    width: 100%;
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+justify-content: space-between;
+
+}
+.heading{
+    font-size: 12px;
+    padding:5px;
+    border: 2px solid rgb(188, 185, 185);
+ margin-left: 4%;
+    color: rgb(188, 185, 185);
+   
+}
+.actives {
+   text-decoration: underline;
+    color: white;
+  }
+.hemburger {
+    position: relative;
+ display: none;
+}
+ .lines{
+    width: 22px;
+height: 2px;
+background-color: white;
+display: block;
+margin: 4px;
+right: 3%;
+
+
+}
+
+.active #line-1{
+    width: 33px;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+.active #line-2{
+    width: 33px;
+    transform: rotate(45deg);
+}
+.active #line-3{
+width: 0;
+ 
+}
+.menubar{
+margin-right: 17rem;
+}
+.menubar .menu{
+    display: flex;
+    
+
+}
+.menubar li{
+    font-size: 23px;
+    margin:9%;
+    list-style: none;
+ 
+}
+.menubar a{
+    color: rgb(188, 185, 185);
+    text-decoration: none;
+}
+
+/* main section */
+.container{
+    display: flex;
+    justify-content: space-between;
+  margin-top: 5%;
+}
+.content-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4%;
+}
+.para{
+    margin-top: 5%;
+    font-size: 23px;
+width: 40%;
+}
+/* right box */
+.image-box{
+    position: relative;
+    width: 55%;
+  
+    margin-right: 5rem;
+}
+button{
+    color: white;
+
+   margin-top: 3rem;
+    background: none;
+    border: none;
+    font-weight: bold;
+    text-align: left;
+}
+.image-box img{
+    width: 100%;
+    height: 50vh;
+
+}
+/* small box section */
+.subbox{
+    background-color: black;
+   position: absolute;
+    top: 80%;
+   left: 40%;
+    box-shadow: 2px 2px 3px  #181719;
+    ;
+width: 50%;
+    padding: 3%;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+}
+.profile-image{
+  width: 22%;
+}
+.profile-image img{
+    margin-top: 12%;
+    width: 100%;
+    height: 6vh;
+    border-radius:50%;
+}
+.web{
+    margin-top: 6%;
+}
+.name{
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.designed{
+    margin-top: 2%;
+}
+/* username section */
+.id{
+    margin-top: 178px;
+  text-align: center;
+}
+
+/* hidden navigation section */
+.hidden{
+    display: none;
+}
+.hidden-navigation{
+    display: flex;
+    flex-direction: column;
+    
+   text-align: center;
+   justify-content: center;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: #181719;
+}
+.hidden-navigation li{
+   margin: 6%;
+   list-style: none;
+ 
+}
+.hidden-navigation a{
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+}
+/* responsive section */
+
+@media(max-width:760px){
+    .navigation{
+        margin-top: 3%;
+    }
+.hemburger{
+    z-index: 1;
+display: block;
+margin-right: 3%;
+}
+.menubar{
+    display: none;
+}
+.container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-box{
+    margin-right: 0px;
+}
+.para{
+    
+    width: 70%;
+}
+.image-box{
+    margin-top: 5%;
+}
+.id{
+margin-top: 100px;
+}
+button{
+    margin-top: 1rem;
+}
+
+
+}
+@media(max-width:400px){
+    .image-box{
+        width: 90%;
+    }
+    .subbox{
+        width: 70%;
+        left: 12%;
+    }
+}
